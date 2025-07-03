@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Care Jobs | CareMe</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <i class="fas fa-heart"></i> CareMe
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="jobs.html">Find Jobs</a></li>
+                <li><a href="employers.html">For Employers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="jobs-container">
+        <h1>Browse Care Jobs in the UK</h1>
+        <div class="jobs-filter">
+            <form class="filter-form">
+                <div class="filter-group">
+                    <label for="jobTypeFilter">Job Type</label>
+                    <select id="jobTypeFilter">
+                        <option value="">All Types</option>
+                        <option value="full-time">Full Time</option>
+                        <option value="part-time">Part Time</option>
+                        <option value="temporary">Temporary</option>
+                        <option value="bank">Bank</option>
+                        <option value="live-in">Live-in</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="locationFilter">Location</label>
+                    <select id="locationFilter">
+                        <option value="">All Locations</option>
+                        <option value="london">London</option>
+                        <option value="manchester">Manchester</option>
+                        <option value="birmingham">Birmingham</option>
+                        <option value="leeds">Leeds</option>
+                        <option value="liverpool">Liverpool</option>
+                        <option value="bristol">Bristol</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="specialtyFilter">Specialty</label>
+                    <select id="specialtyFilter">
+                        <option value="">All Specialties</option>
+                        <option value="elderly">Elderly Care</option>
+                        <option value="dementia">Dementia Care</option>
+                        <option value="disabilities">Learning Disabilities</option>
+                        <option value="mental-health">Mental Health</option>
+                        <option value="palliative">Palliative Care</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Filter Jobs</button>
+            </form>
+        </div>
+        <div class="jobs-list">
+            <div class="job-card">
+                <h2>Care Assistant</h2>
+                <p class="job-location"><i class="fas fa-map-marker-alt"></i> London</p>
+                <p class="job-type">Full Time</p>
+                <p class="job-salary">£10.50 - £12.00 per hour</p>
+                <p class="job-description">Providing personal care and support to elderly residents in a care home setting.</p>
+                <a href="job-detail.html" class="btn btn-primary">View Job</a>
+            </div>
+
+            <div class="job-card featured">
+                <span class="featured-badge">Featured</span>
+                <h2>Senior Care Worker</h2>
+                <p class="job-location"><i class="fas fa-map-marker-alt"></i> Manchester</p>
+                <p class="job-type">Full Time</p>
+                <p class="job-salary">£12.50 - £14.50 per hour</p>
+                <p class="job-description">Leading a team of care assistants in a dementia care facility.</p>
+                <a href="job-detail.html" class="btn btn-primary">View Job</a>
+            </div>
+
+            <div class="job-card">
+                <h2>Support Worker</h2>
+                <p class="job-location"><i class="fas fa-map-marker-alt"></i> Birmingham</p>
+                <p class="job-type">Part Time</p>
+                <p class="job-salary">£11.00 - £12.50 per hour</p>
+                <p class="job-description">Supporting adults with learning disabilities in community settings.</p>
+                <a href="job-detail.html" class="btn btn-primary">View Job</a>
+            </div>
+
+            <div class="job-card">
+                <h2>Live-in Carer</h2>
+                <p class="job-location"><i class="fas fa-map-marker-alt"></i> Leeds</p>
+                <p class="job-type">Live-in</p>
+                <p class="job-salary">£650 - £800 per week</p>
+                <p class="job-description">Providing 24/7 care for clients in their own homes.</p>
+                <a href="job-detail.html" class="btn btn-primary">View Job</a>
+            </div>
+
+            <div class="job-card">
+                <h2>Mental Health Support Worker</h2>
+                <p class="job-location"><i class="fas fa-map-marker-alt"></i> Bristol</p>
+                <p class="job-type">Full Time</p>
+                <p class="job-salary">£11.50 - £13.00 per hour</p>
+                <p class="job-description">Supporting individuals with mental health conditions in residential settings.</p>
+                <a href="job-detail.html" class="btn btn-primary">View Job</a>
+            </div>
+
+            <div class="job-card urgent">
+                <span class="urgent-badge">Urgent Hire</span>
+                <h2>Dementia Care Assistant</h2>
+                <p class="job-location"><i class="fas fa-map-marker-alt"></i> Liverpool</p>
+                <p class="job-type">Temporary</p>
+                <p class="job-salary">£11.00 - £12.50 per hour</p>
+                <p class="job-description">Immediate start available for experienced dementia carers.</p>
+                <a href="job-detail.html" class="btn btn-primary">View Job</a>
+            </div>
+
+            <div class="job-card">
+                <h2>Healthcare Assistant (NHS)</h2>
+                <p class="job-location"><i class="fas fa-map-marker-alt"></i> London</p>
+                <p class="job-type">Full Time</p>
+                <p class="job-salary">£11.50 - £13.50 per hour</p>
+                <p class="job-description">Working in hospital wards supporting nursing staff.</p>
+                <a href="job-detail.html" class="btn btn-primary">View Job</a>
+            </div>
+
+            <div class="job-card">
+                <h2>Palliative Care Assistant</h2>
+                <p class="job-location"><i class="fas fa-map-marker-alt"></i> Manchester</p>
+                <p class="job-type">Part Time</p>
+                <p class="job-salary">£12.00 - £13.50 per hour</p>
+                <p class="job-description">Providing end-of-life care in hospice settings.</p>
+                <a href="job-detail.html" class="btn btn-primary">View Job</a>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button class="btn btn-outline">Previous</button>
+            <button class="btn btn-primary">1</button>
+            <button class="btn btn-outline">2</button>
+            <button class="btn btn-outline">3</button>
+            <button class="btn btn-outline">Next</button>
+        </div>
+    </main>
+
+     <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>For Job Seekers</h3>
+                    <ul>
+                        <li><a href="jobs.html"><i class="fas fa-search"></i> Browse Jobs</a></li>
+                        <li><a href="profile.html"><i class="fas fa-user"></i> Create Profile</a></li>
+                        <li><a href="upload-cv.html"><i class="fas fa-file-alt"></i> Upload CV</a></li>
+                        <li><a href="training.html"><i class="fas fa-graduation-cap"></i> Training Resources</a></li>
+                        <li><a href="career-advice.html"><i class="fas fa-chart-line"></i> Career Advice</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>For Employers</h3>
+                    <ul>
+                        <li><a href="post-job.html"><i class="fas fa-plus"></i> Post a Job</a></li>
+                        <li><a href="search-cvs.html"><i class="fas fa-search"></i> Search CVs</a></li>
+                        <li><a href="recruitment.html"><i class="fas fa-chart-bar"></i> Recruitment Solutions</a></li>
+                        <li><a href="employer-dashboard.html"><i class="fas fa-building"></i> Employer Dashboard</a></li>
+                        <li><a href="partnership.html"><i class="fas fa-handshake"></i> Partnership Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="help.html"><i class="fas fa-question-circle"></i> Help Centre</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                        <li><a href="#"><i class="fas fa-comments"></i> Live Chat</a></li>
+                        <li><a href="tel:08001234567"><i class="fas fa-phone"></i> 0800 123 4567</a></li>
+                        <li><a href="locations.html"><i class="fas fa-map-marker-alt"></i> Find Local Office</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About CareMe</a></li>
+                        <li><a href="news.html"><i class="fas fa-newspaper"></i> News & Press</a></li>
+                        <li><a href="careers.html"><i class="fas fa-briefcase"></i> Careers</a></li>
+                        <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                        <li><a href="terms.html"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CareMe. All rights reserved. | Connecting care professionals across the United Kingdom</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+//
+ <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <i class="fas fa-heart"></i> CareMe
+            </a>
+            
+            <!-- Desktop Navigation -->
+            <div class="desktop-nav">
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="jobs.html">Find Jobs</a></li>
+                    <li><a href="employers.html">For Employers</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                    <a href="signup.html" class="btn btn-primary">Sign Up</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation Toggle -->
+            <button class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu (Hidden by default) -->
+        <div class="mobile-menu-container" id="mobileMenu">
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="jobs.html">Find Jobs</a></li>
+                <li><a href="employers.html">For Employers</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn btn-outline" style="display: inline-block; margin-top: 1rem;">Login</a></li>
+                <li><a href="signup.html" class="btn btn-primary" style="display: inline-block; margin-top: 0.5rem;">Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
+            
+            // Create overlay
+            const overlay = document.createElement('div');
+            overlay.className = 'menu-overlay';
+            document.body.appendChild(overlay);
+            
+            function toggleMenu() {
+                document.body.classList.toggle('mobile-menu-active');
+                const icon = hamburger.querySelector('i');
+                if (document.body.classList.contains('mobile-menu-active')) {
+                    icon.classList.replace('fa-bars', 'fa-times');
+                } else {
+                    icon.classList.replace('fa-times', 'fa-bars');
+                }
+            }
+            
+            hamburger.addEventListener('click', toggleMenu);
+            overlay.addEventListener('click', toggleMenu);
+            
+            // Close menu when clicking on links
+            document.querySelectorAll('#mobileMenu a').forEach(link => {
+                link.addEventListener('click', toggleMenu);
+            });
+        });
+    </script>

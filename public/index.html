@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareMe - Find Your Perfect Care Job in the UK</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <i class="fas fa-heart"></i> CareMe
+            </a>
+         <input type="checkbox" id="menu-toggle" />
+         <label for="menu-toggle" class="hamburger">&#9776;</label>
+<ul class="nav-links">
+    <li><a href="index.html#home">Home</a></li>
+    <li><a href="jobs.html">Find Jobs</a></li>
+    <li><a href="employers.html">For Employers</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="resources.html">Resources</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+            <div class="auth-buttons">
+                <a href="login.html" class="btn btn-outline">Login</a>
+                <a href="signup.html" class="btn btn-primary">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Find Your Perfect Care Job in the UK</h1>
+            <p>Connect with leading care providers and discover rewarding opportunities across England, Scotland, Wales, and Northern Ireland</p>
+            <span style="font-size: 26px; ">Go to Contact Page and send us a Message NOW.</span>
+            <div style="margin-top: 2rem;">
+                <a href="#search" class="btn btn-primary" style="margin-right: 1rem; font-size: 1.1rem; padding: 1rem 2rem;">Browse Jobs</a>
+                <a href="signup.html" class="btn btn-outline" style="font-size: 1.1rem; padding: 1rem 2rem;">Join Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section" id="search">
+        <div class="search-container">
+            <form class="search-form" onsubmit="searchJobs(event)">
+                <div class="form-group">
+                    <label for="jobTitle">Job Title or Keywords</label>
+                    <input type="text" id="jobTitle" placeholder="e.g. Care Assistant, Support Worker">
+                </div>
+                <div class="form-group">
+                    <label for="location">Location</label>
+                    <input type="text" id="location" placeholder="e.g. London, Manchester, Glasgow">
+                </div>
+                <div class="form-group">
+                    <label for="jobType">Job Type</label>
+                    <select id="jobType">
+                        <option value="">All Types</option>
+                        <option value="full-time">Full Time</option>
+                        <option value="part-time">Part Time</option>
+                        <option value="temporary">Temporary</option>
+                        <option value="contract">Contract</option>
+                        <option value="apprenticeship">Apprenticeship</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-search">
+                    <i class="fas fa-search"></i> Search Jobs
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-container">
+            <div class="stat-item">
+                <h3 id="jobCount">15,000+</h3>
+                <p>Active Care Jobs</p>
+            </div>
+            <div class="stat-item">
+                <h3 id="employerCount">2,500+</h3>
+                <p>Registered Employers</p>
+            </div>
+            <div class="stat-item">
+                <h3 id="placementCount">50,000+</h3>
+                <p>Successful Placements</p>
+            </div>
+            <div class="stat-item">
+                <h3 id="userCount">100,000+</h3>
+                <p>Registered Care Workers</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="features-container">
+            <h2>Why Choose CareMe?</h2>
+            <div class="features-grid">
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-search-location"></i>
+                    </div>
+                    <h3>Smart Job Matching</h3>
+                    <p>Our advanced algorithm matches you with the perfect care roles based on your skills, experience, and preferences across the UK.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Verified Employers</h3>
+                    <p>All our care providers are thoroughly vetted and CQC registered, ensuring you work with reputable and compliant organizations.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Career Development</h3>
+                    <p>Access free training resources, certification programs, and career guidance to advance your career in the care sector.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Flexible Opportunities</h3>
+                    <p>Find full-time, part-time, bank, and temporary positions that fit your lifestyle and availability preferences.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Ready</h3>
+                    <p>Apply for jobs on the go with our mobile-optimized platform. Get instant notifications for new opportunities.</p>
+                </div>
+                <div class="feature-card animate-on-scroll">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 Support</h3>
+                    <p>Our dedicated support team is here to help you every step of the way, from application to placement and beyond.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Categories -->
+    <section class="categories">
+        <div class="categories-container">
+            <h2>Browse Care Jobs by Category</h2>
+            <div class="categories-grid">
+                <div class="category-card" onclick="searchByCategory('elderly-care')">
+                    <div class="category-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Elderly Care</h3>
+                    <p class="job-count">3,200+ jobs</p>
+                </div>
+                <div class="category-card" onclick="searchByCategory('domiciliary-care')">
+                    <div class="category-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Domiciliary Care</h3>
+                    <p class="job-count">2,800+ jobs</p>
+                </div>
+                <div class="category-card" onclick="searchByCategory('learning-disabilities')">
+                    <div class="category-icon">
+                        <i class="fas fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Learning Disabilities</h3>
+                    <p class="job-count">1,900+ jobs</p>
+                </div>
+                <div class="category-card" onclick="searchByCategory('mental-health')">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Mental Health</h3>
+                    <p class="job-count">1,500+ jobs</p>
+                </div>
+                <div class="category-card" onclick="searchByCategory('nursing')">
+                    <div class="category-icon">
+                        <i class="fas fa-user-nurse"></i>
+                    </div>
+                    <h3>Nursing</h3>
+                    <p class="job-count">2,100+ jobs</p>
+                </div>
+                <div class="category-card" onclick="searchByCategory('palliative-care')">
+                    <div class="category-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Palliative Care</h3>
+                    <p class="job-count">800+ jobs</p>
+                </div>
+                <div class="category-card" onclick="searchByCategory('childcare')">
+                    <div class="category-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h3>Childcare & SEND</h3>
+                    <p class="job-count">1,200+ jobs</p>
+                </div>
+                <div class="category-card" onclick="searchByCategory('management')">
+                    <div class="category-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <h3>Management</h3>
+                    <p class="job-count">600+ jobs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="cta-container">
+            <h2>Ready to Start Your Care Career?</h2>
+            <p>Join thousands of care professionals who have found their dream jobs through CareMe</p>
+            <div class="cta-buttons">
+                <a href="signup.html" class="btn-white">Create Your Profile</a>
+                <a href="employer-signup.html" class="btn-white">Post a Job</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>For Job Seekers</h3>
+                    <ul>
+                        <li><a href="jobs.html"><i class="fas fa-search"></i> Browse Jobs</a></li>
+                        <li><a href="profile.html"><i class="fas fa-user"></i> Create Profile</a></li>
+                        <li><a href="upload-cv.html"><i class="fas fa-file-alt"></i> Upload CV</a></li>
+                        <li><a href="training.html"><i class="fas fa-graduation-cap"></i> Training Resources</a></li>
+                        <li><a href="career-advice.html"><i class="fas fa-chart-line"></i> Career Advice</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>For Employers</h3>
+                    <ul>
+                        <li><a href="post-job.html"><i class="fas fa-plus"></i> Post a Job</a></li>
+                        <li><a href="search-cvs.html"><i class="fas fa-search"></i> Search CVs</a></li>
+                        <li><a href="recruitment.html"><i class="fas fa-chart-bar"></i> Recruitment Solutions</a></li>
+                        <li><a href="employer-dashboard.html"><i class="fas fa-building"></i> Employer Dashboard</a></li>
+                        <li><a href="partnership.html"><i class="fas fa-handshake"></i> Partnership Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="help.html"><i class="fas fa-question-circle"></i> Help Centre</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                        <li><a href="#"><i class="fas fa-comments"></i> Live Chat</a></li>
+                        <li><a href="tel:08001234567"><i class="fas fa-phone"></i> 0800 123 4567</a></li>
+                        <li><a href="locations.html"><i class="fas fa-map-marker-alt"></i> Find Local Office</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="about.html"><i class="fas fa-info-circle"></i> About CareMe</a></li>
+                        <li><a href="news.html"><i class="fas fa-newspaper"></i> News & Press</a></li>
+                        <li><a href="careers.html"><i class="fas fa-briefcase"></i> Careers</a></li>
+                        <li><a href="privacy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                        <li><a href="terms.html"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CareMe. All rights reserved. | Connecting care professionals across the United Kingdom</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
