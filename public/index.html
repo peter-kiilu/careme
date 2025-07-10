@@ -44,35 +44,34 @@
     </section>
 
     <!-- Search Section -->
-    <section class="search-section" id="search">
-        <div class="search-container">
-            <form class="search-form" onsubmit="searchJobs(event)">
-                <div class="form-group">
-                    <label for="jobTitle">Job Title or Keywords</label>
-                    <input type="text" id="jobTitle" placeholder="e.g. Care Assistant, Support Worker">
-                </div>
-                <div class="form-group">
-                    <label for="location">Location</label>
-                    <input type="text" id="location" placeholder="e.g. London, Manchester, Glasgow">
-                </div>
-                <div class="form-group">
-                    <label for="jobType">Job Type</label>
-                    <select id="jobType">
-                        <option value="">All Types</option>
-                        <option value="full-time">Full Time</option>
-                        <option value="part-time">Part Time</option>
-                        <option value="temporary">Temporary</option>
-                        <option value="contract">Contract</option>
-                        <option value="apprenticeship">Apprenticeship</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn-search">
-                    <i class="fas fa-search"></i> Search Jobs
-                </button>
-            </form>
-        </div>
-    </section>
-
+<section class="search-section" id="search">
+    <div class="search-container">
+        <form class="search-form" action="jobs.html" method="GET">
+            <div class="form-group">
+                <label for="jobTitle">Job Title or Keywords</label>
+                <input type="text" id="jobTitle" name="q" placeholder="e.g. Care Assistant, Support Worker">
+            </div>
+            <div class="form-group">
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="e.g. London, Manchester, Glasgow">
+            </div>
+            <div class="form-group">
+                <label for="jobType">Job Type</label>
+                <select id="jobType" name="type">
+                    <option value="">All Types</option>
+                    <option value="full-time">Full Time</option>
+                    <option value="part-time">Part Time</option>
+                    <option value="temporary">Temporary</option>
+                    <option value="contract">Contract</option>
+                    <option value="apprenticeship">Apprenticeship</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-search">
+                <i class="fas fa-search"></i> Search Jobs
+            </button>
+        </form>
+    </div>
+</section>
     <!-- Stats Section -->
     <section class="stats">
         <div class="stats-container">
