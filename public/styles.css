@@ -10,6 +10,8 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f8f9fa;
+        padding-top: 70px; /* Account for fixed nav height */
+
 }
 
 /* Header */
@@ -23,13 +25,6 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
-
-/* Reset default body margin */
-body {
-    margin: 0;
-    padding-top: 70px; /* Account for fixed nav height */
-}
-
 /* Navigation Styles */
 nav {
     display: flex;
