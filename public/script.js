@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 }
             } else {
                 // For all other pages
-                const phoneNumber = '254103822934';
+                const phoneNumber = '254748880037';
                 const defaultMessage = 'Hello CareMe, I would like to get more information about your services.';
                 const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
                 window.open(whatsappUrl, '_blank');
